@@ -17,7 +17,7 @@ const Boards = styled.section`
   grid-template-columns: repeat(3, 1fr);
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 30px 12px;
   gap: 20px;
   @media (max-width: 810px) {
     grid-template-columns: 1fr;
@@ -43,6 +43,10 @@ const Trash = styled.div<TrashProps>`
   align-items: center;
   margin: 0 auto;
   font-size: 30px;
+  @media (max-width: 810px) {
+    right: 25px;
+    bottom: 25px;
+  }
 `;
 
 function App() {
