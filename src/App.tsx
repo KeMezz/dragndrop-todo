@@ -4,6 +4,13 @@ import styled from "styled-components";
 import { toDosState } from "./atoms";
 import DroppableBoard from "./components/DroppableBoard";
 
+const Title = styled.h1`
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+  line-height: 1.4;
+`;
+
 const Boards = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -84,6 +91,7 @@ function App() {
   };
   return (
     <DragDropContext onDragEnd={onDragEnd}>
+      <Title>Just Drag And Drop!</Title>
       <Boards>
         {Object.keys(toDos).map((boardId) => (
           <DroppableBoard
