@@ -2,16 +2,32 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { RecoilRoot } from 'recoil';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { darkTheme } from './theme';
+import { Helmet } from 'react-helmet';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: ${(props) => props.theme.bgColor};
+    color: ${(props) => props.theme.textColor};
+  }
+`;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Helmet>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+      />
+    </Helmet>
+    <RecoilRoot>
+      <ThemeProvider theme={darkTheme}>
+        <GlobalStyle />
+        <App />
+      </ThemeProvider>
+    </RecoilRoot>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
