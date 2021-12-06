@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dragndrop-todo/static/css/main.7ca54744.chunk.css",
-    "main.js": "/dragndrop-todo/static/js/main.c7ca5ff3.chunk.js",
-    "main.js.map": "/dragndrop-todo/static/js/main.c7ca5ff3.chunk.js.map",
+    "main.js": "/dragndrop-todo/static/js/main.694f1f30.chunk.js",
+    "main.js.map": "/dragndrop-todo/static/js/main.694f1f30.chunk.js.map",
     "runtime-main.js": "/dragndrop-todo/static/js/runtime-main.601ac92d.js",
     "runtime-main.js.map": "/dragndrop-todo/static/js/runtime-main.601ac92d.js.map",
     "static/js/2.f3d2a04e.chunk.js": "/dragndrop-todo/static/js/2.f3d2a04e.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.601ac92d.js",
     "static/js/2.f3d2a04e.chunk.js",
     "static/css/main.7ca54744.chunk.css",
-    "static/js/main.c7ca5ff3.chunk.js"
+    "static/js/main.694f1f30.chunk.js"
   ]
 }
