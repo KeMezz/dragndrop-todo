@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 interface CardProps {
   isDragging: boolean;
-  draggingOver?: string;
+  draggingOver?: string | null;
 }
 
 const Card = styled.li<CardProps>`
